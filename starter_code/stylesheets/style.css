@@ -107,8 +107,6 @@ h1 {
     flex-wrap: wrap;
     align-content: space-between;
     margin-bottom: 25px;
-
-
 }
 
 .companies_list img {
@@ -120,6 +118,44 @@ h1 {
     background-color: white;
 }
 
+.large_small {
+    font-size: 30px;
+    text-align: center;
+
+}
+
+.HQ {
+    font-size: 30px;
+    text-align: center;
+    color: white;
+}
+
+aside .try_free{
+    border-radius: 10px;
+    width: 650px;
+    height: 75px;  
+    margin-bottom: 10px;
+    text-align: center;
+    background-color: rgb(93, 0, 93);
+    color: white;
+    text-transform:uppercase;
+    font-weight: bolder;
+    justify-content: center;
+}
+
+aside .sales {
+    border-radius: 10px;
+    width: 650px;
+    height: 75px;  
+    margin-bottom: 10px;
+    text-align: center;
+    color: rgb(93, 0, 93);
+    text-transform:uppercase;
+    font-weight: bolder;
+    justify-content: center;
+
+}
+
 /* Tablet version */
 @media (max-width: 767px) {
     header {
@@ -129,15 +165,17 @@ h1 {
         display: none;
     }
 
+    aside {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
 
 
 }
 
 /* Phone version */
 @media (min-width: 768px) and (max-width: 1023px) {
-    body {
-        background-color: yellow;
-      }
     .list_top {
         display: none;
     }
@@ -148,21 +186,29 @@ h1 {
         padding: 5px;
     }
 
+    aside {
+        display: flex;
+        flex-direction: column;
+    }
+
 
 }
 
 /* Computer version */
 @media (min-width: 1024px) and (max-width: 1439px) {
-    body {
-        background-color: red;
-      }
+    aside {
+        display: flex;
+        flex-direction: row;
+    }
+
 
 }
 
 /* TV version */
 @media (min-width: 1440px) {
-    body {
-        background-color: blue;
-      }
+    aside {
+        display: flex;
+        flex-direction: row;
+    }
 
 }
