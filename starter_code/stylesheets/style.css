@@ -15,10 +15,11 @@ img {
 
 
 }
-html {
+body {
     font-family: "Roboto", sans-serif;
     background-color: rgb(93, 0, 93);
-    padding: 30px;
+    padding: 0px;
+    margin: 0px;
 }
 
 ul {
@@ -28,6 +29,7 @@ ul {
 .nav_1{
     display: flex;
     justify-content: space-between;
+    padding: 30px;
 }
 
 .nav_1 img{
@@ -36,14 +38,44 @@ ul {
 
 }
 
+header {
+    padding: 30px;
+}
+
 .email{
     display: flex;
     flex-direction: column;
 }
 
+.try_free, .enterprise{
+    border-radius: 10px;
+    width: 500px;
+    height: 75px;  
+    margin-bottom: 10px;
+    text-align: center;
+    background-color: rgb(93, 0, 93);
+    color: white;
+    text-transform:uppercase;
+    font-weight: bolder;
+    justify-content: center;
+}
+
+.sales {
+    border-radius: 10px;
+    width: 500px;
+    height: 75px;  
+    margin-bottom: 10px;
+    text-align: center;
+    color: rgb(93, 0, 93);
+    text-transform:uppercase;
+    font-weight: bolder;
+    justify-content: center;
+
+}
+
 .email button{
     border-radius: 10px;
-    width: 650px;
+    width: 500px;
     height: 75px;  
     margin-bottom: 10px;
     text-align: center;
@@ -62,7 +94,9 @@ ul {
     text-transform: uppercase;
     font-weight: bolder;
     display: flex;
-    align-items: center;   
+    align-items: center;
+    justify-content: space-between;
+
 }
 
 .email_2 img{
@@ -91,13 +125,14 @@ h1 {
 
 .companies, .team, .work, .tools, .large_small {
     background-color: beige;
+    padding: 30px;
 }
 
 .companies_p {
     font-weight: bold;
     text-align: center;
     text-transform: uppercase;
-    font-size: 24px;
+    font-size: 20px;
 
 }
 
@@ -116,6 +151,8 @@ h1 {
 
 .large_small, footer {
     background-color: white;
+    padding: 30px;
+    
 }
 
 .large_small {
@@ -124,42 +161,51 @@ h1 {
 
 }
 
+.porcentaje {
+    font-size: 65px;
+    font-weight: bold;
+    color: rgb(93, 0, 93);
+}
+
+.porcentaje_p {
+    font-weight: bold;
+}
+
 .HQ {
     font-size: 30px;
     text-align: center;
     color: white;
+    padding: 30px;
 }
 
-aside .try_free{
-    border-radius: 10px;
-    width: 650px;
-    height: 75px;  
-    margin-bottom: 10px;
-    text-align: center;
-    background-color: rgb(93, 0, 93);
-    color: white;
-    text-transform:uppercase;
-    font-weight: bolder;
-    justify-content: center;
+.footer_img {
+    width: 75px;
+    height: auto;
+    
 }
 
-aside .sales {
-    border-radius: 10px;
-    width: 650px;
-    height: 75px;  
-    margin-bottom: 10px;
-    text-align: center;
-    color: rgb(93, 0, 93);
-    text-transform:uppercase;
-    font-weight: bolder;
-    justify-content: center;
+.footer_slack {
+    display:flex;
+    justify-content: space-between;
+    line-height:50px;
+}
 
+.ul_top, .status {
+    font-weight: bold;
+    line-height:50px;
+
+}
+
+.social {
+    display:flex;
+    justify-content: space-between;
 }
 
 /* Tablet version */
 @media (max-width: 767px) {
     header {
         text-align: center;
+
       }
     .list_top {
         display: none;
@@ -188,7 +234,7 @@ aside .sales {
 
     aside {
         display: flex;
-        flex-direction: column;
+        flex-direction: column  ;
     }
 
 
